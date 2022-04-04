@@ -195,7 +195,7 @@ function UpdatedForm({
 				</div>
 			</fieldset>
 			<fieldset>
-				<div>
+				<div className='submit'>
 					<input
 						type='submit'
 						value={`${successState ? 'Successfully Added' : 'Create account'}`}

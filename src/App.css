@@ -5,7 +5,9 @@ body {
 	background: #ddd;
 	margin: 2em;
 }
-
+h1 {
+	text-align: center;
+}
 h1,
 h3 {
 	color: #576774;
@@ -25,6 +27,8 @@ form {
 	padding: 1em 1.25em;
 	border: solid 1px #ccc;
 	border-radius: 0.25em;
+	max-width: 600px;
+	margin: auto;
 }
 
 label {
@@ -48,8 +52,8 @@ select {
 	-webkit-appearance: none;
 	/* JD added: */
 	border: solid 1px #ddd;
-    padding: 0.5em 0.5em;
-    width: 16em;
+	padding: 0.5em 0.5em;
+	width: 16em;
 }
 
 input[type='text'],
@@ -67,6 +71,10 @@ input[type='submit'] {
 	font-size: 0.875em;
 	padding: 0.75em 1em;
 	cursor: pointer;
+}
+
+.submit{
+	text-align: center;
 }
 
 input[type='submit']:hover {
@@ -115,15 +123,15 @@ fieldset + fieldset {
 .animalCheckboxes {
 	text-transform: capitalize;
 }
-.animalCheckboxes > div{
+.animalCheckboxes > div {
 	margin-top: 4px;
 	margin-bottom: 4px;
 }
 .animalCheckbox {
 	margin-right: 8px;
 	border: solid 1px silver;
-    border-radius: 5px;
-    padding: 8px;
+	border-radius: 5px;
+	padding: 8px;
 	background-color: whitesmoke;
 }
 
@@ -141,8 +149,6 @@ fieldset + fieldset {
 	font-size: 0.9rem;
 	font-weight: bold;
 }
-
-
 
 /*
   -------------------------------------------------------------------

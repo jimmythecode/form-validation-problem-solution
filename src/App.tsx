@@ -1,7 +1,5 @@
 import React from 'react';
-// import './App.css';
-import './Components/UpdatedForm/App.css';
-import Initial from './Components/Initial/Initial';
+import './App.css';
 import UpdatedForm from './Components/UpdatedForm/UpdatedForm';
 
 function App() {
@@ -27,7 +25,6 @@ function App() {
 
 	return (
 		<div className='App'>
-			{/* <Initial/> */}
 			<UpdatedForm submitFunction={submitFunction} />
 		</div>
 	);

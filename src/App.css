@@ -46,6 +46,10 @@ select {
 	font-size: 1em;
 	border-radius: 0.25em;
 	-webkit-appearance: none;
+	/* JD added: */
+	border: solid 1px #ddd;
+    padding: 0.5em 0.5em;
+    width: 16em;
 }
 
 input[type='text'],
@@ -107,6 +111,38 @@ fieldset + fieldset {
 	width: 10em;
 	display: inline-block;
 }
+
+.animalCheckboxes {
+	text-transform: capitalize;
+}
+.animalCheckboxes > div{
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+.animalCheckbox {
+	margin-right: 8px;
+	border: solid 1px silver;
+    border-radius: 5px;
+    padding: 8px;
+	background-color: whitesmoke;
+}
+
+.animalCheckbox:hover {
+	background-color: white;
+}
+
+.inputContainer {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 8px;
+}
+
+.inputContainer > span {
+	font-size: 0.9rem;
+	font-weight: bold;
+}
+
+
 
 /*
   -------------------------------------------------------------------

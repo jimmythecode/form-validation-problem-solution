@@ -70,6 +70,7 @@ function UpdatedForm({
 					<input
 						type='text'
 						id='email'
+						data-testid="email"
 						name='email'
 						value={emailState}
 						onChange={(event) => {
@@ -95,6 +96,7 @@ function UpdatedForm({
 						className={`error`}
 						type='password'
 						id='password'
+						data-testid="password"
 						name='username'
 						value={passwordState}
 						onChange={(event) => {
@@ -123,6 +125,7 @@ function UpdatedForm({
 					<select
 						name='colour'
 						id='colour'
+						data-testid="select-option"
 						value={colorOptionsState}
 						onChange={(event) => {
 							setColorOptionsState(event.target.value);
@@ -166,6 +169,7 @@ function UpdatedForm({
 									name='animal'
 									value={thisAnimalLabel}
 									id={thisAnimalLabel}
+									data-testid={thisAnimalLabel}
 									checked={animalCheckboxState[thisAnimalLabel as keyof typeof animalCheckboxState]}
 									onChange={(event) =>
 										setAnimalCheckboxState((prev) => ({ ...prev, [thisAnimalLabel]: event.target.checked }))
@@ -198,6 +202,7 @@ function UpdatedForm({
 				<div className='submit'>
 					<input
 						type='submit'
+						data-testid="submit-button"
 						value={`${successState ? 'Successfully Added' : 'Create account'}`}
 						style={{ backgroundColor: successState ? 'green' : '#0b77db' }}
 					/>

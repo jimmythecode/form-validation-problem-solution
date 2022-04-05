@@ -29,7 +29,7 @@ We can cross-reference the browser version that we get from the `userAgent` agai
 We can similarly check for element attribute compatibility. For example the `<input>` element's `type` attribute can be appended with ="email". This is widely supported, but not by Edge browsers before v5.0. This means for some cases the input will fall back to being a standard `text` input. We could provide a javascript validation method as a fallback (assuming the user can use javascript).
 
 ### Testing
-If I were to invest more hours into this task, I would use react-testing-library to test the DOM. To be honest I haven't used this to any significant benefit before. I've quite a few hours under my belt of using Jest for TDD of back-end code and some front-end code, but I need to spend some time practicing DOM testing.
+I have introduced some simple testing with react-testing-library to test the DOM. To be honest I haven't used this to any significant benefit before. I've quite a few hours under my belt of using Jest for TDD of back-end code and some front-end code, but I need to spend some time practicing DOM testing.
 
 ### Browser support
 As above, browser can be checked with `navigator.userAgent` and then different fallbacks can be implemented accordingly. I tend to only use features that are useable by the vast majority of users as for my use-cases it isn't worth the additional time spent coding to get the benefit of the most cutting-edge features. Equally I avoid issues concerning legacy browsers (Internet Explorer, etc), but I can imagine that if your clients include the NHS, NGO's, etc then the client-base will be broader and more accommodations will need to be made.
